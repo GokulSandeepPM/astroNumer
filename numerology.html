@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Astro Numer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>	
+	</head>
+	<body onload = "setLoad();">
+		<script type="text/javascript" src="app.js"></script>
+		<div class = "row">
+			<h2 > 
+				<a href="./index" class="col-sm-1 fa fa-arrow-circle-o-left" id="backIcon"></a>
+				<span class="col-sm-11" id="h2title">Numerology</span> 
+			</h2>
+		</div>
+		<div class ="row col-sm-12 inputFields" >
+			<input type="text" id="nametxt" placeholder="Enter the name" />
+			<button type="button" class="btn btn-primary" onclick="calcNumerology();">Calculate</button>
+		</div>
+		<div class="row col-sm-12 col-md-5 col-lg-5" id="numerologyKattam">
+			<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 disKattam no-padding" id="kattam0"></div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 disKattam no-padding" id="kattam1"></div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 disKattam no-padding" id="kattam2"></div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 disKattam no-padding" id="kattam3"></div>
+			</div>
+			<div class="row  col-xs-12 col-sm-12 col-md-12  col-lg-12 no-padding">
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 disKattam no-padding" id="kattam11"></div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 noDisKattam no-padding" id="kattamBlank"></div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 noDisKattam no-padding" id="kattamBlank"></div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 disKattam no-padding" id="kattam4"></div>
+			</div>
+			<div class="row col-xs-12 col-sm-12 col-md-12  col-lg-12 no-padding">
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 disKattam no-padding" id="kattam120"></div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 noDisKattam no-padding" id="kattamBlank"></div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 noDisKattam no-padding" id="kattamBlank"></div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 disKattam no-padding" id="kattam5"></div>
+				</div>
+			<div class="row col-xs-12  col-sm-12 col-md-12  col-lg-12 no-padding">
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 disKattam no-padding" id="kattam9"></div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 disKattam no-padding" id="kattam8"></div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 disKattam no-padding" id="kattam7"></div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 disKattam no-padding" id="kattam6"></div>
+			</div>
+		</div>
+		<div class="row col-sm-12 col-md-6" id="numerologyPyramid">
+		
+		</div>
+	</body>
+</html>

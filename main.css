@@ -1,0 +1,125 @@
+#h2title,  .h5title{
+	text-align: center;
+	color : #008080;
+}
+
+.h3title{
+	text-align: center;
+	background-color : #008080;
+	color : #ffffff;
+}
+
+ #checkboxPanel, .inputFields{
+	text-align: center;
+	margin : 10px;
+}
+
+
+.rowCheckbox{
+	padding-left: 5px;
+	text-align: center;
+	accent-color: #008080;
+}
+
+#genListDisplay{
+   padding: 10px !important;
+   margin: 10px !important;
+}
+
+.numberEntry{
+	text-align: center;
+	border : 1px solid #008080;
+}
+
+#exportPDF{
+	width: 50px;
+    height: 50px;
+    float: right;
+    margin-right: 30px !important;
+    background: transparent;
+}
+
+#exportList{
+	font-size: larger;
+}
+
+body{
+	background-color : #b2d8d8;
+	background-image: linear-gradient(to bottom, #b2d8d8 , #BDDDDD);
+}
+
+.txtbox{
+	  width:150px;
+      margin: 5px;
+}
+
+.no-padding {
+   padding: 0px !important;
+   margin: 0px !important;
+}
+
+#backIcon
+{
+	font-size:32px;
+	color:#008080
+}
+
+.tile{
+	background-color : #008080;
+	background-image: linear-gradient(to bottom, #008080 , #5FBFBF);
+	color:white;
+	height : 250px;
+	margin : 30px;
+	box-shadow: 5px 10px #249292;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	font-size : 30px;
+}
+
+.tile:hover {
+  box-shadow: 0 15px 25px #249292;
+}
+
+#nametxt{
+	width : 350px;
+	margin : 5px;
+}
+
+#numerologyPyramid{
+	text-align : center;
+	font-size: larger;
+	color : #008080;
+	margin : 20px;
+}
+
+#numerologyKattam{
+	margin : 20px;
+}
+
+.disKattam{
+	border: 1px solid tomato;
+    font-size: larger;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+	background-color:moccasin;
+	margin-left: -1px;
+	margin-top: -1px;
+}
+
+.disKattam, .noDisKattam{
+	height : 100px;
+}
+
+.numberTitle{
+	font-size: larger;
+	text-align: start;
+}
+
+a:hover{
+	text-decoration: none !important;
+	color : white !important;
+	
+}

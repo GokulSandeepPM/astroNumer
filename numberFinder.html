@@ -1,0 +1,162 @@
+<html>
+	<head>
+		<title>Astro Numer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>	
+	</head>
+	<body onload = "setLoad();">
+		<script type="text/javascript" src="app.js"></script>
+		<div class = "row">
+			<h2 > 
+				<a href="./index" class="col-sm-1 fa fa-arrow-circle-o-left" id="backIcon"></a>
+				<span class="col-sm-11" id="h2title">Number Finder</span> 
+			</h2>
+		</div>
+		<h3 class="h3title"> Choice Numbers  </h3>
+		<div  class="row col-10 " id="checkboxPanel">
+			<div class="col-sm-12 col-md-6 no-padding">
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo01" value="01" onchange="updateList(event);"/> <span> 01 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo02" value="02" onchange="updateList(event);"/> <span> 02 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo03" value="03" onchange="updateList(event);"/> <span> 03 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo04" value="04" onchange="updateList(event);"/> <span> 04 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo05" value="05" onchange="updateList(event);"/> <span> 05 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo06" value="06" onchange="updateList(event);"/> <span> 06 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo07" value="07" onchange="updateList(event);"/> <span> 07 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo08" value="08" onchange="updateList(event);"/> <span> 08 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo09" value="09" onchange="updateList(event);"/> <span> 09 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo10" value="10" onchange="updateList(event);"/> <span> 10 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo11" value="11" onchange="updateList(event);"/> <span> 11 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo12" value="12" onchange="updateList(event);"/> <span> 12 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo13" value="13" onchange="updateList(event);"/> <span> 13 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo14" value="14" onchange="updateList(event);"/> <span> 14 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo15" value="15" onchange="updateList(event);"/> <span> 15 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo16" value="16" onchange="updateList(event);"/> <span> 16 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo17" value="17" onchange="updateList(event);"/> <span> 17 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo18" value="18" onchange="updateList(event);"/> <span> 18 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo19" value="19" onchange="updateList(event);"/> <span> 19 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo20" value="20" onchange="updateList(event);"/> <span> 20 </span>
+			</div>
+			<div class="col-sm-12 col-md-6 no-padding">
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo21" value="21" onchange="updateList(event);"/> <span> 21 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo22" value="22" onchange="updateList(event);"/> <span> 22 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo23" value="23" onchange="updateList(event);"/> <span> 23 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo24" value="24" onchange="updateList(event);"/> <span> 24 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo25" value="25" onchange="updateList(event);"/> <span> 25 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo26" value="26" onchange="updateList(event);"/> <span> 26 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo27" value="27" onchange="updateList(event);"/> <span> 27 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo28" value="28" onchange="updateList(event);"/> <span> 28 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo29" value="29" onchange="updateList(event);"/> <span> 29 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo30" value="30" onchange="updateList(event);"/> <span> 30 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo31" value="31" onchange="updateList(event);"/> <span> 31 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo32" value="32" onchange="updateList(event);"/> <span> 32 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo33" value="33" onchange="updateList(event);"/> <span> 33 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo34" value="34" onchange="updateList(event);"/> <span> 34 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo35" value="35" onchange="updateList(event);"/> <span> 35 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo36" value="36" onchange="updateList(event);"/> <span> 36 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo37" value="37" onchange="updateList(event);"/> <span> 37 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo38" value="38" onchange="updateList(event);"/> <span> 38 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo39" value="39" onchange="updateList(event);"/> <span> 39 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo40" value="40" onchange="updateList(event);"/> <span> 40 </span>
+			</div>
+			<div class="col-sm-12 col-md-6 no-padding">
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo41" value="41" onchange="updateList(event);"/> <span> 41 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo42" value="42" onchange="updateList(event);"/> <span> 42 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo43" value="43" onchange="updateList(event);"/> <span> 43 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo44" value="44" onchange="updateList(event);"/> <span> 44 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo45" value="45" onchange="updateList(event);"/> <span> 45 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo46" value="46" onchange="updateList(event);"/> <span> 46 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo47" value="47" onchange="updateList(event);"/> <span> 47 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo48" value="48" onchange="updateList(event);"/> <span> 48 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo49" value="49" onchange="updateList(event);"/> <span> 49 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo50" value="50" onchange="updateList(event);"/> <span> 50 </span> 
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo51" value="51" onchange="updateList(event);"/> <span> 51 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo52" value="52" onchange="updateList(event);"/> <span> 52 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo53" value="53" onchange="updateList(event);"/> <span> 53 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo54" value="54" onchange="updateList(event);"/> <span> 54 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo55" value="55" onchange="updateList(event);"/> <span> 55 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo56" value="56" onchange="updateList(event);"/> <span> 56 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo57" value="57" onchange="updateList(event);"/> <span> 57 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo58" value="58" onchange="updateList(event);"/> <span> 58 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo59" value="59" onchange="updateList(event);"/> <span> 59 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo60" value="60" onchange="updateList(event);"/> <span> 60 </span>
+			</div>
+			<div class="col-sm-12 col-md-6 no-padding">
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo61" value="61" onchange="updateList(event);"/> <span> 61 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo62" value="62" onchange="updateList(event);"/> <span> 62 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo63" value="63" onchange="updateList(event);"/> <span> 63 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo64" value="64" onchange="updateList(event);"/> <span> 64 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo65" value="65" onchange="updateList(event);"/> <span> 65 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo66" value="66" onchange="updateList(event);"/> <span> 66 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo67" value="67" onchange="updateList(event);"/> <span> 67 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo68" value="68" onchange="updateList(event);"/> <span> 68 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo69" value="69" onchange="updateList(event);"/> <span> 69 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo70" value="70" onchange="updateList(event);"/> <span> 70 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo71" value="71" onchange="updateList(event);"/> <span> 71 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo72" value="72" onchange="updateList(event);"/> <span> 72 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo73" value="73" onchange="updateList(event);"/> <span> 73 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo74" value="74" onchange="updateList(event);"/> <span> 74 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo75" value="75" onchange="updateList(event);"/> <span> 75 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo76" value="76" onchange="updateList(event);"/> <span> 76 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo77" value="77" onchange="updateList(event);"/> <span> 77 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo78" value="78" onchange="updateList(event);"/> <span> 78 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo79" value="79" onchange="updateList(event);"/> <span> 79 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo80" value="80" onchange="updateList(event);"/> <span> 80 </span>
+			</div>
+			<div class="col-sm-12 col-md-12 no-padding">
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo81" value="81" onchange="updateList(event);"/> <span> 81 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo82" value="82" onchange="updateList(event);"/> <span> 82 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo83" value="83" onchange="updateList(event);"/> <span> 83 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo84" value="84" onchange="updateList(event);"/> <span> 84 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo85" value="85" onchange="updateList(event);"/> <span> 85 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo86" value="86" onchange="updateList(event);"/> <span> 86 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo87" value="87" onchange="updateList(event);"/> <span> 87 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo88" value="88" onchange="updateList(event);"/> <span> 88 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo89" value="89" onchange="updateList(event);"/> <span> 89 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo90" value="90" onchange="updateList(event);"/> <span> 90 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo91" value="91" onchange="updateList(event);"/> <span> 91 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo92" value="92" onchange="updateList(event);"/> <span> 92 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo93" value="93" onchange="updateList(event);"/> <span> 93 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo94" value="94" onchange="updateList(event);"/> <span> 94 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo95" value="95" onchange="updateList(event);"/> <span> 95 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo96" value="96" onchange="updateList(event);"/> <span> 96 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo97" value="97" onchange="updateList(event);"/> <span> 97 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo98" value="98" onchange="updateList(event);"/> <span> 98 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo99" value="99" onchange="updateList(event);"/> <span> 99 </span>
+				<input class="rowCheckbox" type="checkbox" id="checkBoxNo00" value="00" onchange="updateList(event);"/> <span> 00 </span>
+			</div>
+		</div>
+		<h3 class="col-12 h3title"> Start Sequence and sum  </h3>
+		<div class ="row col-12 inputFields" >
+			<div class= "row col-sm-12 col-md-2"></div>
+            <div class = "row col-sm-12 col-md-8 inputFields"> 
+				<div class="col-sm-4 col-md-2" > <input class="txtbox" type="number" min = "00" max = "99" id="firstSet" placeholder="First Set" onchange="if(parseInt(this.value,10)<10 && this.value.length == 1)this.value='0'+this.value;" />
+				</div><div class="col-sm-4 col-md-2" > <input class="txtbox" type="number" min = "00" max = "99" id="secondSet" placeholder="Second Set" onchange="if(parseInt(this.value,10)<10 && this.value.length == 1)this.value='0'+this.value;" />
+				</div><div class="col-sm-4 col-md-2" > <input class="txtbox" type="number" min = "00" max = "99" id="thirdSet" placeholder="Third Set" onchange="if(parseInt(this.value,10)<10 && this.value.length == 1)this.value='0'+this.value;" />
+				</div><div class="col-sm-4 col-md-2" > <input class="txtbox" type="number" min = "00" max = "99" id="fourthSet" placeholder="Fourth Set" onchange="if(parseInt(this.value,10)<10 && this.value.length == 1)this.value='0'+this.value;" />
+				</div><div class="col-sm-4 col-md-2" > <input class="txtbox" type="number" min = "00" max = "99" id="fifthSet" placeholder="Fifth Set" onchange="if(parseInt(this.value,10)<10 && this.value.length == 1)this.value='0'+this.value;" />
+				</div><div class="col-sm-4 col-md-2" > <input class="txtbox"type="number" min = "00" max = "99" id="sixthSet" placeholder="Sixth Set" onchange="if(parseInt(this.value,10)<10 && this.value.length == 1)this.value='0'+this.value;" /> 
+			</div>
+			<div class= "row col-sm-12 col-md-2"></div>
+            <br />
+			<br />
+            <div class = "row col-sm-12 col-md-12"> 
+				<input class="txtbox" type="number" min = "00" max = "99" id="sumVal" placeholder="Sum" onchange="if(parseInt(this.value,10)<10 && this.value.length == 1)this.value='0'+this.value;" /> &nbsp; &nbsp;
+				<button type="button" class="btn btn-primary" onclick="generate();">Generate</button>
+            </div> 
+		</div>
+		<h3 class="row col-sm-12 col-md-12 h3title"> Generated Numbers  </h3>
+		<h5 class="row col-sm-12 col-md-12 h5title" id="cntDisplay">  </h5>
+		<div class="row no-padding">
+		<button type="button" class="btn btn-outline-danger no-padding" onclick="exportPDF();" id="exportPDF" style="display:none" title="Export as PDF">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ff0000" d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"/></svg>
+		</button>
+		</div>
+		<div calss="row" id="exportList" style="display:none"> </div>
+		<div class="row" id="genListDisplay" ></div>
+	</body>
+</html>
