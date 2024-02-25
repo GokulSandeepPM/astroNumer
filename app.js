@@ -39,20 +39,34 @@ function generate(){
 	let fifthSet = parseInt($('#fifthSet').val());
 	let sixthSet = parseInt($('#sixthSet').val());
 	let sum = parseInt($('#sumVal').val());
-	if(firstSet < 0 || firstSet > 99)
+	if(firstSet < 0 || firstSet > 99){
 		alert('First Set value is invalid');
-	else if(secondSet < 0 || secondSet > 99)
+		return 0;
+	}
+	else if(secondSet < 0 || secondSet > 99){
 		alert('Second Set value is invalid');
-	else if(thirdSet < 0 || thirdSet > 99)
+		return 0;
+	}
+	else if(thirdSet < 0 || thirdSet > 99){
 		alert('Third Set value is invalid');
-	else if(fourthSet < 0 || fourthSet > 99)
+		return 0;
+	}
+	else if(fourthSet < 0 || fourthSet > 99){
 		alert('Fourth Set value is invalid');
-	else if(fifthSet < 0 || fifthSet > 99)
+		return 0;
+	}
+	else if(fifthSet < 0 || fifthSet > 99){
 		alert('Fifth Set value is invalid');
-	else if(sixthSet < 0 || sixthSet > 99)
+		return 0;
+	}
+	else if(sixthSet < 0 || sixthSet > 99){
 		alert('Sixth Set value is invalid');
-	else if(isNaN(sum) ||sum == null || sum == undefined || (sum < 0 || sum > 99))
+		return 0;
+	}
+	else if(isNaN(sum) ||sum == null || sum == undefined || (sum < 0 || sum > 99)){
 		alert('Sum value is invalid');
+		return 0;
+	}
 	let loop1 = choiceNumbers;
 	let loop2 = choiceNumbers;
 	let loop3 = choiceNumbers;
