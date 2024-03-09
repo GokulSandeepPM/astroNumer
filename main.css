@@ -109,6 +109,10 @@ body{
 	margin-top: -1px;
 }
 
+.active{
+	border: 2px solid green !important;
+}
+
 .disKattam, .noDisKattam{
 	height : 100px;
 }

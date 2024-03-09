@@ -1,6 +1,7 @@
 let choiceNumbers = ['99','97','95','93','92','89','88','87','85','84','80','79','77','74','73','72','68','66','64','54','51','45','42','41','37','32','29','22','16','14','12','10','08','06','04'];
 let genList=[];
 let divHTML = '';
+let currentStart = 1;
 
 function setLoad(){
 	$.each(choiceNumbers, function(ind, val) {
@@ -212,6 +213,20 @@ function generate(){
 }
 
 function calcNumerology(){
+	$('#kattam1').html('');
+	$('#kattam2').html('');
+	$('#kattam3').html('');
+	$('#kattam4').html('');
+	$('#kattam5').html('');
+	$('#kattam6').html('');
+	$('#kattam7').html('');
+	$('#kattam8').html('');
+	$('#kattam9').html('');
+	$('#kattam10').html('');
+	$('#kattam11').html('');
+	$('#kattam0').html('');
+	$('#numerologyPyramid').html('');
+	
 	let alpha2Num = {'a':1,'b':2,'c':3,'d':4,'e':5,'f':8,'g':3,'h':5,'i':1,'j':1,'k':2,'l':3,'m':4,'n':5,'o':7,'p':8,'q':1,'r':2,'s':3,'t':4,'u':6,'v':6,'w':6,'x':5,'y':1,'z':7,'1':1,'2':2,'3':3,'4':4,'5':5,'6':6,'7':7,'8':8,'9':9,'0':0};
 	let alpha2Num1 = {'a':1,'b':2,'c':3,'d':4,'e':5,'f':6,'g':7,'h':8,'i':9,'j':1,'k':2,'l':3,'m':4,'n':5,'o':6,'p':7,'q':8,'r':9,'s':1,'t':2,'u':3,'v':4,'w':5,'x':6,'y':7,'z':8,'1':1,'2':2,'3':3,'4':4,'5':5,'6':6,'7':7,'8':8,'9':9,'0':0};
 
@@ -246,6 +261,7 @@ function calcNumerology(){
 		num.push([...temp]);
 	}
 	num.reverse();
+	tmp.push("/ "+num[1].join(''));
 	let divText = "";
 	for(let cnt=0;cnt<num.length;cnt++){
 		divText += "<span> "+num[cnt].join(" ")+addSpace+"</span><br/>";
@@ -262,6 +278,12 @@ function calcNumerology(){
 		kattamJson[''+kattamsum] = kattamJson[''+kattamsum]+name[cnt].toUpperCase()+" ";
 	}
 	
+	tmpJSON = {}
+	for(let cnt = 0; cnt < 12 ; cnt++){
+		tmpJSON[''+((cnt+currentStart-1)%12)] = kattamJson[''+cnt];
+	}
+	kattamJson = {...tmpJSON}
+	
 	$('#kattam1').html(kattamJson['1']);
 	$('#kattam2').html(kattamJson['2']);
 	$('#kattam3').html(kattamJson['3']);
@@ -275,4 +297,13 @@ function calcNumerology(){
 	$('#kattam11').html(kattamJson['11']);
 	$('#kattam0').html(kattamJson['0']);
 	
+}
+
+function changeStart(n){
+	Array.from(document.querySelectorAll('.disKattam')).forEach(
+	  (el) => el.classList.remove('active')
+	);
+	$('#kattam'+n).addClass("active");
+	currentStart = n;
+	calcNumerology();
 }
