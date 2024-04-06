@@ -109,7 +109,10 @@ function generate(){
 		let num = [];
 		let temp=[];
 		let tmp=[];
-		for(let cnt1=0;cnt1 < curNum.length; cnt1++){
+		let cnt1 = 0;
+		if(loop1 == '00')
+			cnt1 = 2
+		for(;cnt1 < curNum.length; cnt1++){
 			temp.push(parseInt(curNum[cnt1]));
 		}
 		while(temp.length > 1){
@@ -262,11 +265,7 @@ function calcNumerology(){
 	}
 	num.reverse();
 	tmp.push("/ "+num[1].join(''));
-	let divText = "";
-	for(let cnt=0;cnt<num.length;cnt++){
-		divText += "<span> "+num[cnt].join(" ")+addSpace+"</span><br/>";
-	}
-	divText += "<br/><span> "+tmp.join(" ")+"</span><br/><br/><br/>";
+	let divText = "<span> "+tmp.join(" ")+"</span>";
 	$('#numerologyPyramid').html(divText);
 	
 	let kattamJson = {'0':'','1':'','2':'','3':'','4':'','5':'','6':'','7':'','8':'','9':'','10':'','11':''};
